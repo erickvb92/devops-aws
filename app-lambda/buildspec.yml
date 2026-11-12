@@ -1,0 +1,9 @@
+version: 0.2
+phases:
+  build:
+    commands:
+      - cd app-lambda
+      - zip -r $CODEBUILD_SRC_DIR/function.zip . -x "buildspec.yml" "*.md"
+artifacts:
+  files:
+    - function.zip
