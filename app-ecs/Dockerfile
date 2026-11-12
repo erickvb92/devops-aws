@@ -1,5 +1,5 @@
 # Node.js 26 (última versión mayor). Si tu entorno lo requiere, puedes usar la LTS: node:24-alpine
-FROM node:24-alpine
+FROM public.ecr.aws/docker/library/node:24-alpine
 #FROM node:26-alpine
 
 ARG BUILD_ID=5230ec53
